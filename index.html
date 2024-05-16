@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ドラム De タタタン</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="warning" class="warning">音量にご注意ください</div>
+        <div id="score-container">
+            <div id="score">Score: 0</div>
+            <div id="combo">Combo: 0</div>
+        </div>
+        <div id="lanes">
+            <div class="lane" id="lane-a">
+                <div class="label">A</div>
+                <div class="timing-icon"></div>
+            </div>
+            <div class="lane" id="lane-s">
+                <div class="label">S</div>
+                <div class="timing-icon"></div>
+            </div>
+            <div class="lane" id="lane-d">
+                <div class="label">D</div>
+                <div class="timing-icon"></div>
+            </div>
+            <div class="lane" id="lane-space">
+                <div class="label">Space</div>
+                <div class="timing-icon"></div>
+            </div>
+        </div>
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+            <div id="time-label">0s / 89s</div>
+        </div>
+        <button id="start-button" class="btn">Start</button>
+        <div id="final-score-popup" class="hidden">
+            <div id="final-score-text"></div>
+            <button id="retry-button" class="btn">Retry</button>
+        </div>
+    </div>
+    <audio id="main-music" src="Music.mp3"></audio>
+    <audio id="sound-a" src="A.mp3"></audio>
+    <audio id="sound-s" src="S.mp3"></audio>
+    <audio id="sound-d" src="D.mp3"></audio>
+    <audio id="sound-space" src="Space.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
