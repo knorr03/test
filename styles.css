@@ -156,3 +156,14 @@ body {
     left: 50%;
     transform: translateX(-50%);
 }
+
+#credits {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+#credits a {
+    color: #00ff00;
+    text-decoration: none;
+}
